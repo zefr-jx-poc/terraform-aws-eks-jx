@@ -1,9 +1,9 @@
 // ----------------------------------------------------------------------------
 // Configure providers
 // ----------------------------------------------------------------------------
-provider "aws" {
-  region = var.region
-}
+# provider "aws" {
+#   region = var.region
+# }
 
 resource "random_string" "suffix" {
   length  = 8
