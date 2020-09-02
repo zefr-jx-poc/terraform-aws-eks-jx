@@ -27,6 +27,7 @@ resource "random_pet" "current" {
 module "cluster" {
   source                                = "./modules/cluster"
   cluster_name                          = local.cluster_name
+  region                                = var.region
   cluster_version                       = var.cluster_version
   desired_node_count                    = var.desired_node_count
   min_node_count                        = var.min_node_count
